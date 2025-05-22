@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Быстрые отчёты</title>
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="main__body">
+
+            <div push>
+                <div class="zadachi_push">
+                    Задачи
+                </div>
+                <div class="podderjka_push">
+                    Поддержка
+                </div>
+                <div class="kompaniya_push">
+                    Компания
+                </div>
+            </div>
+
+            <div class="main__logo">
+                <div class="logo">
+                    <img src="/image/logo.svg" alt="logo">
+                </div>
+            </div>
+            
+            <div class="main__button">
+                <div class="profile">
+                    <img src="/image/profile.svg" alt="profile">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ОКОШКО С ДРУЗЬЯМИ -->
+    <div window__friends> 
+
+        <!-- Кнопка открытия -->
+        <div open_button>
+            <button id="openBtn"class="open">
+                <img src="/image/friends.svg" alt="open">
+            </button>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+
+
+                <!--фигуры которые в окне использовались -->
+                <div class="shapes"> 
+                    <div class="line"></div>
+                     <div class="window_grey"></div>
+                     <img class="compani_log" src="/image/compani_log.svg" alt="compani_log">
+                    <h2 class="text__friends">Друзья</h2>
+                </div>
+
+                <div class="input__id__friend">
+                    <div class="friends__add">Добавить друга: </div>
+                    <input type="text" class="id_friend" placeholder="Введите id друга:">
+                </div>
+
+                
+                <!--тут как раз должны быть друзья, которых можно скролить -->
+                <div class="scrollable-content">
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                    <p>Тут должны быть друзья</p>
+                </div>
+
+
+                <!-- Кнопка закрытия -->
+                <div close_button>
+                    <button id="closeBtn" class="close">
+                        <img src="/image/close.svg" alt="close">
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>

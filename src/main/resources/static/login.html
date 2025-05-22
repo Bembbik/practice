@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="main">
+    <div class="main__body">
+        <div class="main__logo">
+            <div class="logo">
+                <a href="#"><img src="/image/logo.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="main__button">
+            <div class="friends">
+                <a href="#"><img src="/image/friends.svg" alt="friends"></a>
+            </div>
+            <div class="profile">
+                <a href="#"><img src="/image/profile.svg" alt="profile"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ ОБЯЗАТЕЛЬНО: форма с action="/login" -->
+<form method="post" action="/login" class="login">
+    <div class="login__heading">
+        Вход
+    </div>
+    <div class="login__window">
+        <div class="window_grey"></div>
+    </div>
+
+    <div class="login__input">
+        <!-- ✅ ОБЯЗАТЕЛЬНО: name="username" и name="password" -->
+        <input type="text" name="username" class="login__login__input login__input" placeholder="Введите логин" required>
+        <input type="password" name="password" class="password__login__input login__input" placeholder="Введите пароль" required>
+    </div>
+
+    <div class="login__button">
+        <button type="submit" class="log__button">Войти</button>
+        <a href="/register.html"><div class="registration_button">Зарегистрироваться</div></a>
+    </div>
+</form>
+</body>
+</html>

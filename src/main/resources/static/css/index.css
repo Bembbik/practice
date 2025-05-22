@@ -1,0 +1,179 @@
+@font-face {
+    font-family:"Montserrat";
+    src: url(/front/fonts/Montserrat-Medium.ttf)
+}
+@font-face {
+    font-family:"MontserratExtralight";
+    src: url(/front/fonts/Montserrat-ExtraLight.ttf)
+}
+@font-face {
+    font-family:"MontserratRegular";
+    src: url(/front/fonts/Montserrat-Regular.ttf)
+}
+
+.main__body {
+  position: relative; /* Делаем контейнер точкой отсчёта для абсолютного позиционирования */
+  min-height: 68px; /* Чтобы контейнер был не меньше высоты аватара */
+}
+
+.logo {
+  position: absolute;
+  left: 155px; /* Отступ слева */
+  top: 55px; /* Центрирование по вертикали */
+  width: 115px;
+  height: 40px;
+}
+
+.profile {
+  position: absolute;
+  right: 140px; 
+  top: 55px; /* Центрирование по вертикали */
+  width: 68px;
+  height: 68px;
+}
+
+
+.popup {
+  position: fixed;
+  top: 95px;
+  left: 1300px;
+  display: none; /* Скрываем по умолчанию */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.popup-content {
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 15px;
+  max-height: 80vh;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  z-index: -2;
+  border: 1px #D4d4d4 solid
+}
+
+.scrollable-content {
+  position: absolute;
+  top: 68px;
+  width: 300px;
+  overflow-y: auto;
+  max-height: 251px;
+  margin: 10px 0;
+}
+
+.open {
+     position: absolute;
+  left: 1650px; 
+  top: 68px; 
+  width: 33px;
+  height: 33px;
+  border: none;
+  background-color: #ffff;
+}
+
+.close {
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 22px;
+    left: 280px;
+    border: none;
+    z-index: 3;
+}
+.compani_log {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+}
+.window_grey {
+  background: #f9f9f9;
+  border-radius: 15px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 340px;
+  height: 77px;
+}
+
+.text__friends {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 125px;
+    font-family: MontserratRegular;
+}
+
+.line {
+    background: #D4d4d4;
+  border-radius: 15px;
+  position: absolute;
+  left: 1px;
+  top: 340px;
+  width: 340px;
+  height: 1px;
+  z-index: 2;
+}
+
+.friends__add {
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 30px;
+    font-size: 20px;
+    font-family: MontserratRegular;
+}
+
+.id_friend {
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: MontserratExtralight;
+    text-indent: 10px;
+    transition: 0.5s;
+}
+.id_friend:hover {
+    
+    border: 1px #DD4433 solid;
+    border-color: #DD4433;
+}
+
+.id_friend:focus {
+    outline-color: #DD4433;
+}
+
+
+.zadachi_push{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 698px;
+    font-size: 24px;
+    font-family: MontserratRegular;
+}
+
+.podderjka_push{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 830px;
+    font-size: 24px;
+    font-family: MontserratRegular;
+}
+
+.kompaniya_push{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 1004px;
+    font-size: 24px;
+    font-family: MontserratRegular;
+}
