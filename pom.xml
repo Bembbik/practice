@@ -21,6 +21,11 @@
           <artifactId>jackson-datatype-jsr310</artifactId>
           <version>2.19.0</version>
       </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>2.0.9</version> <!-- или другая версия -->
+      </dependency>
       <!-- JPA и PostgreSQL -->
       <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
       <dependency>
@@ -83,8 +88,27 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-actuator</artifactId>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+      <dependency>
+          <groupId>jakarta.servlet</groupId>
+          <artifactId>jakarta.servlet-api</artifactId>
+          <version>6.1.0</version>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
   <build>
     <finalName>un-practice</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <compilerArgs>
+                      <arg>-parameters</arg>
+                  </compilerArgs>
+                  <release>17</release> <!-- или версия Java, которую ты используешь -->
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>

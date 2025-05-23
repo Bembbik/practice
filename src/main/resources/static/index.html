@@ -29,22 +29,54 @@
                     <img src="/image/logo.svg" alt="logo">
                 </div>
             </div>
-            
-            <div class="main__button">
-                <div class="profile">
-                    <img src="/image/profile.svg" alt="profile">
+
+
+        </div>
+    </div>
+    <!-- ОКОШКО ПРОФИЛЯ -->
+    <div class="window__profile">
+
+        <!-- Кнопка открытия -->
+        <div open_button_profile>
+            <button id="openBtnprofile" class="open_profile">
+                <img src="/image/profile.svg" alt="open_profile">
+            </button>
+        </div>
+        <div id="popup_profile" class="popup_profile">
+            <div class="popup-content_profile">
+
+                <div class="shapes">
+                    <div class="profile_text">Профиль</div>
+                    <div class="FIO_text">ФИО</div>
+
+                    <!--ИМЯЯЯЯЯ-->
+                    <div class="name">West Canye Андреевич</div>
+                    <div class="id_text">ID</div>
+                    <div class="id">2282281488</div>
+                    <div class="point_text">Баллы</div>
+                    <a href="#" class="exit_account">
+                        <div>Выйти из аккаунта</div>
+                    </a>
+                    <!--Баллллыыыы-->
+                    <div class="point">0</div>
                 </div>
+                <div class="close_profile">
+                    <button id="closeBtnprofile" class="close_profile">
+                        <img src="/image/close.svg" alt="close_profile">
+                    </button>
+                </div>
+
             </div>
+
         </div>
     </div>
 
-    
     <!-- ОКОШКО С ДРУЗЬЯМИ -->
-    <div window__friends> 
+    <div window__friends>
 
         <!-- Кнопка открытия -->
         <div open_button>
-            <button id="openBtn"class="open">
+            <button id="openBtn" class="open">
                 <img src="/image/friends.svg" alt="open">
             </button>
         </div>
@@ -53,38 +85,26 @@
 
 
                 <!--фигуры которые в окне использовались -->
-                <div class="shapes"> 
+                <div class="shapes">
                     <div class="line"></div>
                      <div class="window_grey"></div>
                      <img class="compani_log" src="/image/compani_log.svg" alt="compani_log">
                     <h2 class="text__friends">Друзья</h2>
                 </div>
 
+                <!-- Поле ввода и кнопка -->
                 <div class="input__id__friend">
                     <div class="friends__add">Добавить друга: </div>
-                    <input type="text" class="id_friend" placeholder="Введите id друга:">
+                    <input type="text" id="friend-id-input" class="id_friend" placeholder="Введите id друга:">
+                    <button id="addFriendBtn">
+                        <img class="button_add" src="/image/button_friends.svg" alt="button_add">
+                    </button>
                 </div>
 
-                
+
                 <!--тут как раз должны быть друзья, которых можно скролить -->
-                <div class="scrollable-content">
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
-                    <p>Тут должны быть друзья</p>
+                <div class="scrollable-content" id="friends-list">>
+
                 </div>
 
 
@@ -94,10 +114,11 @@
                         <img src="/image/close.svg" alt="close">
                     </button>
                 </div>
-                
+
             </div>
         </div>
     </div>
   <script src="/js/script.js"></script>
+
 </body>
 </html>

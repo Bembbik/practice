@@ -1,14 +1,14 @@
 @font-face {
     font-family:"Montserrat";
-    src: url(/front/fonts/Montserrat-Medium.ttf)
+    src: url(/fonts/Montserrat-Medium.ttf)
 }
 @font-face {
     font-family:"MontserratExtralight";
-    src: url(/front/fonts/Montserrat-ExtraLight.ttf)
+    src: url(/fonts/Montserrat-ExtraLight.ttf)
 }
 @font-face {
     font-family:"MontserratRegular";
-    src: url(/front/fonts/Montserrat-Regular.ttf)
+    src: url(/fonts/Montserrat-Regular.ttf)
 }
 
 .main__body {
@@ -24,9 +24,132 @@
   height: 40px;
 }
 
+.open_profile {
+    position: absolute;
+    left: 1710px;
+    top: 47px; /* Центрирование по вертикали */
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #ffff;
+}
+.close_profile {
+    position: absolute;
+
+    background-color: #f9f9f9;
+    top: 10px;
+    left: 170px;
+    border: none;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+.popup_profile {
+    max-width: 100%;
+    position: absolute;
+    display: none; /* Скрываем по умолчанию */
+
+}
+.popup-content_profile {
+    position: absolute;
+    left: 1300px;
+    top: 80px;
+    background-color: #ffff;
+    padding: 150px;
+    border-radius: 15px;
+    width:100px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border: 1px #D4d4d4 solid
+}
+
+.profile_text {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 35px;
+    font-family: MontserratBold;
+    font-size: 32px;
+}
+
+.FIO_text{
+    position: absolute;
+    z-index: 1;
+    top: 73px;
+    left: 35px;
+    font-family: MontserratExtralight;
+    font-size: 18px;
+}
+
+.name  {
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    left: 35px;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+}
+
+.id_text {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 35px;
+    font-family: MontserratExtralight;
+    font-size: 18px;
+}
+.id {
+    position: absolute;
+    z-index: 1;
+    top: 183px;
+    left: 35px;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+}
+
+.point_text {
+    position: absolute;
+    z-index: 1;
+    top: 223px;
+    left: 35px;
+    font-family: MontserratExtralight;
+    font-size: 18px;
+}
+
+.point {
+    position: absolute;
+    z-index: 1;
+    top: 246px;
+    left: 35px;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+}
+.exit_account {
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    left: 110px;
+    font-family: MontserratExtralight;
+    font-size: 18px;
+    color: #DD4433;
+}
+
+
+
+.button_add {
+    position: absolute;
+    z-index: 2;
+    top: 380px;
+    left: 230px;
+    width: 80px;
+    height: 40px;
+}
 .profile {
   position: absolute;
-  right: 140px; 
+  right: 140px;
   top: 55px; /* Центрирование по вертикали */
   width: 68px;
   height: 68px;
@@ -68,8 +191,8 @@
 
 .open {
      position: absolute;
-  left: 1650px; 
-  top: 68px; 
+  left: 1650px;
+  top: 68px;
   width: 33px;
   height: 33px;
   border: none;
@@ -141,7 +264,7 @@
     transition: 0.5s;
 }
 .id_friend:hover {
-    
+
     border: 1px #DD4433 solid;
     border-color: #DD4433;
 }
@@ -176,4 +299,21 @@
     left: 1004px;
     font-size: 24px;
     font-family: MontserratRegular;
+}
+
+
+
+#friends-list {
+    max-height: 200px; /* Максимальная высота списка */
+    overflow-y: auto; /* Включаем прокрутку при необходимости */
+}
+
+.friend-item {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.friend-item:last-child {
+    border-bottom: none;
 }
