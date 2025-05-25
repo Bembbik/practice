@@ -47,6 +47,7 @@ public class SecurityConfig {
                                 "/",
                                 "/index.html",
                                 "/register.html",
+                                "/create_task.html",
                                 "/register",
                                 "/css/**",
                                 "/js/**",

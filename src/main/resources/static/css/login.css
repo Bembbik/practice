@@ -1,3 +1,4 @@
+
 @font-face {
     font-family:"MontserratBold";
     src: url(/front/fonts/Montserrat-Bold.ttf)
@@ -9,14 +10,7 @@
 @font-face {
     font-family:"MontserratExtralight";
     src: url(/front/fonts/Montserrat-ExtraLight.ttf)
-
 }
-@font-face {
-    font-family:"Montserrat-SemiBold";
-    src: url(/front/fonts/Montserrat-SemiBold.ttf)
-
-}
-
 @font-face {
     font-family:"MontserratRegular";
     src: url(/front/fonts/Montserrat-Regular.ttf)
@@ -24,406 +18,128 @@
 
 
 
-
-.html, .body {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
-}
-
-
-
 .main__body {
-    max-width: 100%; /* Делаем контейнер точкой отсчёта для абсолютного позиционирования */
-    margin: 0 auto;
-    overflow-x: hidden; /* Чтобы контейнер был не меньше высоты аватара */
+  max-width: 100%; /* Делаем контейнер точкой отсчёта для абсолютного позиционирования */
+  margin: 0 auto;
+  overflow-x: hidden;
+ /* Чтобы контейнер был не меньше высоты аватара */
 }
-
 
 
 .logo {
-    position: absolute;
-    left: 155px; /* Отступ слева */
-    top: 55px; /* Центрирование по вертикали */
-    width: 115px;
-    height: 40px;
+  position: absolute;
+  left: 8%; /* Отступ слева */
+  top: 5.6%; /* Центрирование по вертикали */
+  width: 8%;
+  height: 4%;
 }
 
-.open_profile {
-    position: absolute;
-    left: 1710px;
-    top: 47px; /* Центрирование по вертикали */
-    width: 60px;
-    height: 60px;
-    border: none;
-    background-color: #ffff;
-}
-.close_profile {
-    position: absolute;
-
-    background-color: #f9f9f9;
-    top: 10px;
-    left: 170px;
-    border: none;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
+.profile {
+  position: absolute;
+  left: 90%; /* Отступ слева */
+  top: 4.8%; /* Центрирование по вертикали */
+  width: 2.5%;
+  height: 3%;
 }
 
-.popup_profile {
-    max-width: 100%;
-    position: absolute;
-    display: none; /* Скрываем по умолчанию */
-
-}
-.popup-content_profile {
-    position: absolute;
-    left: 1300px;
-    top: 80px;
-    background-color: #ffff;
-    padding: 150px;
-    border-radius: 15px;
-    width:100px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    border: 1px #D4d4d4 solid
-}
-
-.profile_text {
-    position: absolute;
-    z-index: 1;
-    top: 15px;
-    left: 35px;
-    font-family: MontserratBold;
-    font-size: 32px;
-}
-
-.FIO_text{
-    position: absolute;
-    z-index: 1;
-    top: 73px;
-    left: 35px;
-    font-family: MontserratExtralight;
-    font-size: 18px;
-}
-
-.name  {
-    position: absolute;
-    z-index: 1;
-    top: 110px;
-    left: 35px;
-    font-family: Montserrat-SemiBold;
-    font-size: 18px;
-}
-
-.id_text {
-    position: absolute;
-    z-index: 1;
-    top: 150px;
-    left: 35px;
-    font-family: MontserratExtralight;
-    font-size: 18px;
-}
-.id {
-    position: absolute;
-    z-index: 1;
-    top: 183px;
-    left: 35px;
-    font-family: Montserrat-SemiBold;
-    font-size: 18px;
-}
-
-.point_text {
-    position: absolute;
-    z-index: 1;
-    top: 223px;
-    left: 35px;
-    font-family: MontserratExtralight;
-    font-size: 18px;
-}
-
-.point {
-    position: absolute;
-    z-index: 1;
-    top: 246px;
-    left: 35px;
-    font-family: Montserrat-SemiBold;
-    font-size: 18px;
-}
-.exit_account {
-    position: absolute;
-    z-index: 1;
-    top: 280px;
-    left: 110px;
-    font-family: MontserratExtralight;
-    font-size: 18px;
-    color: #DD4433;
+.friends {
+     position: absolute;
+  left: 87%; /* Отступ слева */
+  top: 5.3%; /* Центрирование по вертикали */
+  width: 2.5%;
+  height: 3%;
 }
 
 
-
-.popup_friend {
-    max-width: 100%;
+.login__heading {    
     position: absolute;
-    display: none; /* Скрываем по умолчанию */
-
+  font-family: MontserratBold;
+  left: 72.5vh;
+  top: 27vh;
+  font-size: 3.8vh;
+  z-index: 1;
 }
 
-
-
-.popup-content_friend {
-    position: absolute;
-    left: 1300px;
-    top: 75px;
-    background-color: #ffff;
-    padding: 170px;
-    border-radius: 15px;
-    max-height: 80vh;
-    width:3px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    border: 1px #D4d4d4 solid
-}
-
-
-
-.scrollable-content {
-    position: absolute;
-    top: 68px;
-    left: 20px;
-    width:300px;
-    overflow-y: auto;
-    max-height: 251px;
-    margin: 10px 0;
-}
-
-.open_friend {
-    position: absolute;
-    left: 1650px;
-    top: 47px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    background-color: #ffff;
-}
-
-.close_friend {
-    position: absolute;
-
-    background-color: #f9f9f9;
-    top: 10px;
-    left: 140px;
-    border: none;
-}
-.compani_log {
-    position: absolute;
-    left: 15px;
-    z-index: 1;
-    top: 15px;
-}
 .window_grey {
-    background: #f9f9f9;
-    border-radius: 15px;
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    width: 340px;
-    height: 77px;
+  background: #F9F9F9;
+  border-radius: 4% / 4%;
+  position: absolute;
+  left: 67vh;
+  top: 22.1vh;
+  width: 73.2vh;
+  height: 58.2vh;
+  z-index: 0;
+  border: 0.1vh #D4d4d4 solid;
 }
 
-.text__friends {
-    position: absolute;
-    z-index: 1;
-    top: 5px;
-    left: 125px;
-    font-family: MontserratRegular;
-}
-
-.friend {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: px;
-    font-family: MontserratRegular;
-    border-radius: 15px;
-    border: 1px #D4d4d4 solid;
-    width: 270px;
-    height: 40px;
-    text-indent: 15px;
-    line-height: 40px;
-    font-size: 16px;
-
-}
-
-.delete_friend {
-    background-color: #f9f9f9;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    text-indent: -15px;
-}
-
-.friend button {
-    width: 40;
-    position: flex;
-    left: 25px;
-    gap: 10px;
+.login__input {
+    border-radius: 8%/80%;
     border: none;
-}
-
-.line {
-    background: #D4d4d4;
-    border-radius: 15px;
-    position: absolute;
-    left: 1px;
-    top: 340px;
-    width: 340px;
-    height: 1px;
-    z-index: 2;
-}
-
-.friends__add {
-    position: absolute;
-    z-index: 1;
-    top: 350px;
-    left: 30px;
-    font-size: 20px;
-    font-family: MontserratRegular;
-}
-
-.id_friend {
-    position: absolute;
-    z-index: 1;
-    top: 390px;
-    left: 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
     font-family: MontserratExtralight;
-    text-indent: 10px;
+    text-indent: 1vh;
     transition: 0.5s;
 }
-
-.button_add {
-    position: absolute;
-    z-index: 2;
-    top: 380px;
-    left: 240px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    border: none;
-}
-
-.id_friend:hover {
-
-    border: 1px #DD4433 solid;
+.login__input input:hover {
+    
+    border: 0.1vh #DD4433 solid;
     border-color: #DD4433;
 }
 
-.id_friend:focus {
+.login__input:focus {
     outline-color: #DD4433;
 }
 
-
-.zadachi_push{
+.login__login__input {
     position: absolute;
-    z-index: 1;
-    top: 70px;
-    left: 668px;
-    font-size: 24px;
-    font-family: MontserratRegular;
+  left: 73.4vh; /* Отступ слева */
+  top: 38.4vh; /* Центрирование по вертикали */
+  width: 63vh;
+  height: 5.6vh;
+  font-size: 2.5vh;
 }
 
-.podderjka_push{
+.password__login__input{
     position: absolute;
-    z-index: 1;
-    top: 70px;
-    left: 800px;
-    font-size: 24px;
-    font-family: MontserratRegular;
+  left: 73.4vh; /* Отступ слева */
+  top: 51.3vh; /* Центрирование по вертикали */
+  width: 63vh;
+  height: 5.6vh;
+  font-size: 24px;
+  font-size: 2.5vh;
 }
 
-.kompaniya_push{
+
+.log__button {
     position: absolute;
-    z-index: 1;
-    top: 70px;
-    left: 974px;
-    font-size: 24px;
+  left: 78.6vh; /* Отступ слева */
+  top: 64.7vh; /* Центрирование по вертикали */
+  width: 52.3vh;
+  height: 9vh;
+  color: #dddddd;
+  background: #DD4433;
+  border-radius: 3%/11%;
+  font-size: 3.3vh;
+   border: none;
+   font-family: MontserratRegular;
+   transition: 0.5s;
+}
+.log__button:hover {
+    border: 0,1vh solid;
+    border-color: red;
+    background: #ffffff;
+    color: #DD4433;
+    border-color: red;
+}
+.registration_button {
+    position: absolute;
+    left: 92.5vh;
+    top: 82.6vh;
+    color: #DD4433;
+    background: #ffffff;
+    font-size: 2.3vh;
     font-family: MontserratRegular;
-}
-
-
-
-
-
-
-.tasks {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 1500px;
-    margin: 208px auto 0;
-}
-
-.row_group {
-    display: flex;
-    justify-content: space-between;
-    gap: 90px;
-}
-
-.row_header {
-    flex: 1;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-.row_title {
-    font-size: 2em;
-    font-weight: bold;
-    font-family: MontserratRegular;
-}
-.add_new_tasks {
-    padding: 8px 16px;
     border: none;
-    background-color: #ffffff;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 114px;
-}
-.task {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
-.task h1 {
-    margin-top: 0;
-    color: #333;
-    font-family: MontserratBold;
-    font-size: 1.2em;
-}
-.task h2 {
-    color: #333;
-    font-family: MontserratRegular;
-    font-size: 0.75em;
-}
-
-.editing_button {
-    padding: 6px;
-    margin-left: 10px;
-}
